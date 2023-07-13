@@ -1,9 +1,9 @@
 ## Usage
-The top half represents the graph 
-The bottom half represent the list of job logs running in the process
-To get the paths taken by jobs, click on the particular job id on the table 
-To select a date - just click on one of the dates in the select dropdown menu
-To highlight the links of a  paricular job, click on the partcula job in the table two times.
+The top half represents the graph.
+The bottom half represent the list of job logs running in the process.
+To get the paths taken by jobs, click on the particular job id on the table.
+To select a date - just click on one of the dates in the select dropdown menu.
+To highlight the links of a  paricular job, click on the partcular job in the table two times.
 
 ## Installation
 To run the code in your system - 
