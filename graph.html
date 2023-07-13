@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .links line { */
+            /* stroke: #999; */
+            /* stroke-opacity: 0.6; */
+        /* } */
+
+        .nodes circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .tooltip {
+            position: absolute;
+            padding: 8px;
+            background-color: #fff;
+            /* border: 1px solid #ccc; */
+            pointer-events: none;
+        }
+
+        body{
+            overflow-x: scroll;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <svg width="1500" height="700"></svg>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <script src="https://papaparse.min.js"></script> -->
+    <!-- <script src="index.js" type="module"></script> -->
+    <script src="./js/levels.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script src="./js/table.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- <svg></svg> -->
+    <!-- <div id="tooltip" class="tooltip"></div> -->
+    <div class="description-box">
+        <div>
+            <span>Nodes Color Shading</span> <span class="swno"><span>|min</span><span>max|</span></span>
+        </div>
+        <div>
+            <span>Spine Switches</span> <span id="spinal" class="swno"></span>
+        </div>
+        <div>
+            <span>Director Switches</span> <span id="director" class="swno"></span>
+        </div>
+        <div>
+            <span>Leaf Switches</span> <span id="leaf" class="swno"></span>
+        </div>
+        <div>
+            <span>Nodes</span><span id="node" class="swno"></span>
+        </div>
+    </div>
+    <!-- <button id="button">Row count</button> -->
+    <table id="example" class="display tableDesign" style="width:100%">
+        <thead>
+            <tr>
+                <th></th>
+                <th>JobID</th>
+                <th>UserName</th>
+                <th>QueueName</th>
+                <th>TotalNodes</th>
+                <!-- TotalCores RequiredTime JobState ElaspedTime -->
+                <th>TotalCores</th>
+                <th>RequiredTime</th>
+                <th>JobState</th>
+                <th>ElaspedTime</th>
+            </tr>
+        </thead>
+        <!-- <tfoot>
+            <tr>
+                <th></th>
+                <th>JobID</th>
+                <th>UserName</th>
+                <th>QueueName</th>
+                <th>TotalNodes</th>
+            </tr>
+        </tfoot> -->
+    </table>
+    
+</body>
+
+</html>
